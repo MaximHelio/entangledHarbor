@@ -1,0 +1,64 @@
+babaseURL = "https://MaximHelio.github.io/"
+languageCode = "en-us"
+title = "Entangled Harbor ⚛️⚓"
+theme = "PaperMod"
+enableRobotsTXT = true
+[pagination]
+  pagerSize = 10
+
+# 검색(인덱스)용 JSON도 빌드
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# 수식/HTML 허용
+[markup.goldmark.renderer]
+unsafe = true
+
+# 코드 하이라이트
+[markup.highlight]
+noClasses = false
+style = "dracula"
+
+[params]
+description = "Research · Dev · Quantum — fresh catches of ideas"
+author = "MaximHelio"
+math = true
+showReadingTime = true
+env = "production"
+
+  [params.homeInfoParams]
+  Title = "Entangled Harbor"
+  Content = "Research · Development · Quantum — 신선한 아이디어가 드나드는 항구"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/YOUR_USERNAME"
+
+# 다국어(선택)
+defaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.ko]
+    languageName = "한국어"
+    weight = 2
+
+# 메뉴(예시)
+[[menu.main]]
+name = "Research"
+url = "/tags/research/"
+weight = 10
+
+[[menu.main]]
+name = "Dev Notes"
+url = "/tags/dev/"
+weight = 20
+
+[[menu.main]]
+name = "Quantum"
+url = "/tags/quantum/"
+weight = 30
+seURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
